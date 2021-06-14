@@ -1,0 +1,212 @@
+.welcome {
+    .container {
+        .welcome__text {
+            margin-top: 150px;
+            text-align: center;
+            @include xxs {
+                margin-top: 40px;
+            }
+            .wel {
+                font-size: 14px;
+                font-family: 'pnl';
+                letter-spacing: 3px;
+                h3 {
+                    padding-top: 5px;
+                }
+            }
+            h2 {
+                margin: 30px 0;
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: 'pnb';
+                    color: #000000;
+                    letter-spacing: 8px;
+                    padding: 0;
+                    /* background: #fede00; */
+                    position: relative;
+                    z-index: 10;
+                }
+                span:after {
+                    content: "";
+                    display: block;
+                    width: 97%;
+                    height: 15px;
+                    background: #fede00;
+                    position: absolute;
+                    z-index: -1;
+                    left: 0;
+                    top: 4px;
+                }
+            }
+            p {
+                font-size: 12px;
+                line-height: 2;
+                margin: 10px 120px;
+                @include sm {
+                    margin: 10px 0;
+                }
+                @include xxs {
+                    display: none;
+                }
+                @include mb {
+                    display: none;
+                }
+            }
+            .inline {
+                margin-top: 50px;
+                margin-bottom: 30px;
+                @include inline1;
+                width: 320px;
+                @include xxs {
+                    display: none;
+                }
+                @include mb {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.project {
+    .container {
+        .project__wrap {
+            .project__tag-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+                .tag {
+                    margin: 0 10px;
+                    padding: 7px 15px;
+                    color : #898989 ;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-size: 12px;
+                    font-family: 'pnl';
+                    &:hover {
+                        transition: 0.3s;
+                        color: #000;
+                    }   
+                    &.active {
+                        transition: 0.3s;
+                        color: #000;
+                        background: #fede00;
+                        border-radius: 10px;
+                    }
+                }
+                @include xxs {
+                    display: none;
+                }
+                @include mb {
+                    display: none;
+                }
+            }
+            .project__list--wrap {
+                @include xxs {
+                    margin-top: 140px;
+                }
+                .project--tag {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    .project__list {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        column-gap: 20px;
+                        .project__list-item {
+                            .img {
+                                img {
+                                    @include imgCen;              
+                                }
+                            }
+                        }
+                        @include xxs {
+                            display: block;
+                        } 
+                        @include mb {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .more {
+            margin: 40px 0;
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            img {
+                cursor: pointer;
+                margin-top: 20px ;
+                width: 15px;
+                height: 15px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.foter {
+    .container {
+        .inline {
+            @include inline;
+            margin: 20px 0;
+        }
+        .foter__wrap {
+            display: flex;
+            @include styletext12 ;
+            align-items: inherit;
+            @include sm {
+                display: block;
+            }
+            @include mb {
+                display: block;
+            }
+            .foter__left {
+                margin-left: 25px;
+                padding: 30px 0; 
+                .text {
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }
+                @include sm {
+                    text-align: center;
+                    margin: 0;
+                    .text {
+                        margin-bottom: 20px;
+                    } 
+                }
+                @include mb {
+                    text-align: center;
+                    margin: 0;
+                    .text {
+                        margin-bottom: 20px;
+                    } 
+                }
+            }
+            .foter__right {
+                margin-left: 225px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                div {
+                    margin: 10px 0;
+                }
+                @include md {
+                    margin-left: 180px;
+                    
+                }
+                @include sm {
+                    display: none;
+                }
+                @include mb {
+                    display: none;
+                }
+            }
+        }
+    }
+}

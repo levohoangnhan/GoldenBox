@@ -1,0 +1,75 @@
+.project {
+    .container {
+        .allwork__wrap {
+            margin-top: 150px;
+            .project__tag-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .tag {
+                    margin-bottom: 20px;
+                    padding: 7px 15px;
+                    color : #898989 ;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-size: 12px;
+                    font-family: 'pnl';
+                    &:hover {
+                        transition: 0.3s;
+                        color: #000;
+                    }   
+                }
+                @include xxs {
+                    display: none;
+                }
+                @include mb {
+                    display: none;
+                }
+            }
+            .project__list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 20px;   
+                .project__list-item {
+                    .img {
+                        img {
+                            @include imgCen;              
+                        }
+                    }
+                }
+                @include xxs {
+                    display: block;
+                } 
+                @include mb {
+                    display: block;
+                }
+            }
+        }
+        .more-wrap {
+            @include midFlex;
+            margin: 50px 0;
+            .more__hidden {
+                visibility: hidden;
+            }
+            .btn__more {
+                text-align: center;
+                font-size: 12px;
+                text-transform: uppercase;
+                .imgMore {
+                    cursor: pointer;
+                    margin-top: 20px ;
+                    width: 15px;
+                    height: 15px;
+                    transform: rotate(180deg);
+                }
+            }
+            .book__btn {
+                .btn__if {
+                    display: block;
+                    text-align: right;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

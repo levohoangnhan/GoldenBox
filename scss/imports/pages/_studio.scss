@@ -1,0 +1,109 @@
+.studio__wrap {
+    margin-top: 150px;
+    .container {
+        .grid__wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            @include xs {
+                display: block;
+            }
+            .studio__grid-item {
+                height: 100%;
+                &:hover {
+                    .grid__text:hover{
+                        background: #525355;
+                        .studio__number {
+                            color: #000;
+                        }
+                        .studio__dimensions {
+                            transition: 0.4s;
+                            color: #fff;
+                        }
+                        .studio__details {
+                            transition: 0.4s;
+                            color: #fff;
+                        }
+                    }
+                    .img:hover {
+                        transform: scale(1.1);
+                        filter: brightness(99%);
+                    }
+                }
+                .grid-wrap-studio {
+                    overflow: hidden;
+                    transition: 0.4s;
+                    // z-index: -1;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 0;
+                    padding-bottom: 56.25%;
+                    position: relative;
+                    a {
+                        img {
+                            width: 100%;
+                            // @include midTrans;
+                            @include imgCen;
+                            position: absolute;
+                            filter:brightness(50%); 
+                            transition: 0.4s;
+                        }
+                    }
+                }
+                .grid__text {
+                    height: 120px;
+                    margin-bottom: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: #fff;
+                    color: #000;
+                    transition: 0.4s;
+                    cursor: pointer;
+                    z-index: 100;
+                    @include mb {
+                        height: 75px;
+                    }
+                      
+                    .studio__dimensions {
+                        font-size: 12px;
+                        @include mb {
+                            margin-left: 25px;
+                            margin-top: 20px;
+                        }
+                        .text {
+                            margin: 10px 0;
+                            @include mb {
+                                margin: 0;
+                            }
+                        }
+                        p {
+                            margin: 5px 0;
+                        }
+                    }
+                    .studio__details {            
+                        text-align: center;
+                        width: 121px;
+                        font-size: 12px;
+                        @include mb {
+                            text-align: right;
+                        }
+                        .text {
+                            margin-bottom: 25px;
+                            @include mb {
+                                display: none;
+                            }
+                        }
+                        .icon-svg {
+                            width: 15px;
+                            @include mb {
+                                transform: rotate(-90deg);
+                            }
+                        }
+                    }
+                }    
+            }
+        }    
+    }
+}

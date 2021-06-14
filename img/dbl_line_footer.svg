@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="36" viewBox="0 0 220 36">
+  <defs>
+    <image id="image" width="220" height="1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAABCAYAAAC1+sBwAAAAGElEQVQokWNkYGD4zzAKRsEooD1gYGAAAHCiAQH+o6fhAAAAAElFTkSuQmCC"/>
+  </defs>
+  <use id="line_copy_3" data-name="line copy 3" xlink:href="#image"/>
+  <use id="line_copy_5" data-name="line copy 5" y="35" xlink:href="#image"/>
+</svg>

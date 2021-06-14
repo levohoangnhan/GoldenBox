@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="215" height="14" viewBox="0 0 215 14">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 20px;
+        fill: #fbdb01;
+        text-anchor: middle;
+        font-family: "Proxima Nova";
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="gbox_coffee" data-name="gbox coffee" class="cls-1" x="107.848" y="13.785"><tspan x="107.848">gbox coffee</tspan></text>
+</svg>
